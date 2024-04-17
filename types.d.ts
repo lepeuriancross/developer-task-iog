@@ -2,10 +2,10 @@
 
 // Data
 type Content = {
-	sections?: (SectionHero | SectionCards)[];
+	blocks?: (BlockHero | BlockCards)[];
 };
 
-type SectionHero = {
+type BlockHero = {
 	_type: 'blockHero';
 	image?: Image;
 	title?: string;
@@ -14,7 +14,7 @@ type SectionHero = {
 	buttons?: Button[];
 };
 
-type SectionCards = {
+type BlockCards = {
 	_type: 'blockCards';
 	cards?: Card[];
 };

@@ -6,7 +6,7 @@ import imgCard from '../../public/img/image_placeholder-card.png';
 
 // Data
 export const staticHome: Content = {
-	sections: [
+	blocks: [
 		{
 			_type: 'blockHero',
 			title: `Lorem ipsum`,
