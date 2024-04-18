@@ -16,14 +16,14 @@ export default function Button(props: ButtonProps) {
 	return (
 		<button
 			className={classNames(
-				'button relative font-semibold text-[16px] leading-[19.36px] cursor-pointer',
+				'button relative font-semibold text-[16px] leading-[19.36px] cursor-pointer group',
 				className
 			)}
 			type="button"
 		>
 			<div
 				className={classNames(
-					'button__bg absolute top-0 left-0 w-full h-full rounded-xl',
+					'button__bg absolute top-0 left-0 w-full h-full rounded-xl transition-transform duration-300 ease-out group-hover:scale-x-105 group-hover:scale-y-110',
 					color === 'primary' && 'bg-pink',
 					color === 'secondary' && 'bg-orange'
 				)}
