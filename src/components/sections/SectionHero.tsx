@@ -61,13 +61,12 @@ export default function SectionHero(props: BlockHero) {
 							<div className="section__image-spacer relative z-10 w-full pt-[60%]" />
 							{image && (
 								<Image
-									className="section__image-img absolute top-0 left-0 w-full h-full object-cover"
+									className="section__image-img absolute top-0 left-0 w-full h-full object-cover object-center"
 									src={image.src}
 									width={image.width}
 									height={image.height}
 									alt={image.alt ?? ''}
-									objectFit="cover"
-									objectPosition="center"
+									priority
 								/>
 							)}
 						</div>

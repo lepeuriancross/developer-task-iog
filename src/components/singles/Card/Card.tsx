@@ -30,13 +30,11 @@ export default function Card(props: CardProps) {
 				<div className="card__image-spacer relative z-10 w-full pt-[50%]" />
 				{image && (
 					<Image
-						className="card__image-img absolute z-20 top-0 left-0 w-full h-full object-cover"
+						className="card__image-img absolute z-20 top-0 left-0 w-full h-full object-cover object-center"
 						src={image.src}
 						width={image.width}
 						height={image.height}
 						alt={image.alt ?? ''}
-						objectFit="cover"
-						objectPosition="center"
 					/>
 				)}
 			</div>
