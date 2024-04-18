@@ -13,7 +13,7 @@ export default function SectionHero(props: BlockHero) {
 	return (
 		<section className="section relative w-full py-24 overflow-hidden">
 			<div className="section__container relative z-20 px-6">
-				<div className="section__row grid grid-cols-1 container w-full mx-auto gap-y-12 gap-x-20 lg:grid-cols-5">
+				<div className="section__row grid grid-cols-1 container w-full max-w-screen-xl mx-auto gap-y-12 gap-x-20 lg:grid-cols-5">
 					<AosWrapper
 						className="section__col space-y-5 lg:col-span-3 lg:py-24 lg:space-y-8"
 						animation="fade-right"

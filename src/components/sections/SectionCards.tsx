@@ -13,13 +13,16 @@ export default function SectionCards(props: BlockCards) {
 			<div className="section__bg absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-br from-blue to-orange-light" />
 			<div className="section__container relative z-20 px-6">
 				<AosWrapper
-					className="section__row grid grid-cols-1 container w-full mx-auto gap-12 lg:grid-cols-3"
+					className="section__row grid grid-cols-1 container w-full max-w-screen-xl mx-auto gap-12 lg:grid-cols-3"
 					animation="fade-up"
 					duration={0.5}
 					stagger={0.1}
 				>
 					{cards.map((card, c) => (
-						<div key={`section-cards-card-${c}`} className="section__col">
+						<div
+							key={`section-cards-card-${c}`}
+							className="section__col h-full"
+						>
 							<Card className="h-full" {...card} />
 						</div>
 					))}
